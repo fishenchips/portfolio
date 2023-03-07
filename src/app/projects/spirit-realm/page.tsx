@@ -1,7 +1,10 @@
 const SpiritRealmPage = () => {
   return (
     <>
-      <p>welcom</p>
+      <p>Ongoing</p>
+      <p>React, TypeScript, Agile Methodologies</p>
+      <p>React, TypeScript, framer motion, xState machine</p>
+      <p>Working with a senior </p>
     </>
   );
 };
