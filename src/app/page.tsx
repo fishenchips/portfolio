@@ -58,6 +58,9 @@ const Home = () => {
             Platzi&apos;s Paradise e-commerce
           </Link>
         </div>
+        <div>
+          <Link href={"/projects/stryda"}>Stryda internship</Link>
+        </div>
       </section>
     </main>
   );
