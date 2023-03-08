@@ -1,91 +1,65 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+/*  <Image
               src="/vercel.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
               height={24}
               priority
-            />
-          </a>
+            /> */
+const Home = () => {
+  return (
+    <main>
+      <div>
+        <h2>Welcome to my space - I&apos;m Philip Carlsson</h2>
+        <ul>
+          {/* color is weird atm due to a tag */}
+          <li>
+            <Link href="https://github.com/fishenchips" target="_blank">
+              <FaGithub />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.linkedin.com/in/philip-carlsson-b6494a90/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </Link>
+          </li>
+        </ul>
+        <div>
+          <p>
+            Hello and welcome to my GitHub! I&apos;m currently a FE intern at
+            Stryda, and graduating from Medieinstitutet in may 2023. Over my
+            intern I have improved greatly in React, Typescript, and in packages
+            such as tanstack query, react hook form. Furthermore I have lead
+            daily stand-ups and retros which I enjoy. I&apos;m actively seeking
+            a full-time position as a FE developer, where I can continue to
+            learn and work with my passion. Currently working on: Creating my
+            portfolio and Krukan 2.0.
+          </p>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+      <section>
+        <div>
+          <Link href={"/projects/krukan"}>
+            Krukan
+            <div>
+              {/*               <img src="/krukan.PNG" alt="Krukan" />
+               */}
+            </div>
+          </Link>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div>
+          <Link href={"/projects/platzis-paradise"}>
+            Platzi&apos;s Paradise e-commerce
+          </Link>
+        </div>
+      </section>
     </main>
-  )
-}
+  );
+};
+export default Home;
