@@ -1,5 +1,6 @@
 "use client";
 import { Montserrat } from "@next/font/google";
+import styled from "styled-components";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,7 +19,13 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={montserrat.className}>{children}</body>
+      <Body className={montserrat.className}>{children}</Body>
     </html>
   );
 }
+
+const Body = styled.body`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+`;
