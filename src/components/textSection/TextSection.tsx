@@ -8,7 +8,7 @@ interface Props {
   github?: string;
   website?: string;
   tags: Array<string>;
-  text: string;
+  text: Array<string>;
 }
 
 export const TextSection: React.FC<Props> = ({
@@ -44,7 +44,9 @@ export const TextSection: React.FC<Props> = ({
           </S.TagDiv>
         </S.InfoDiv>
         <S.TextDiv>
-          <p>{text}</p>
+          {text.map((section, i) => (
+            <p key={i}>{section}</p>
+          ))}
         </S.TextDiv>
       </S.PageSection>
       ;
