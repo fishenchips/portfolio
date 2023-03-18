@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export const Header = styled.h2`
   margin: 2rem 0;
@@ -52,4 +53,14 @@ export const StyledTag = styled.span`
   background-color: #34ebb1;
   border-radius: 10px;
   text-align: center;
+`;
+
+export const ProjectLink = styled(Link)`
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem;
+
+  &:visited {
+    text-decoration: none;
+  }
 `;
