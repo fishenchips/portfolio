@@ -1,11 +1,15 @@
+"use client";
+import { TextSection } from "@/components/textSection/TextSection";
+import { spiritRealm } from "@/utils/spiritRealm/info";
+
 const SpiritRealmPage = () => {
   return (
-    <>
-      <p>Ongoing</p>
-      <p>React, TypeScript, Agile Methodologies</p>
-      <p>React, TypeScript, framer motion, xState machine</p>
-      <p>Working with a senior </p>
-    </>
+    <TextSection
+      header={spiritRealm.header}
+      timeSpent={spiritRealm.timeSpent}
+      tags={spiritRealm.tags}
+      text={spiritRealm.text}
+    />
   );
 };
 
