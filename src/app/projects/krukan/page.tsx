@@ -1,30 +1,17 @@
-import Link from "next/link";
+"use client";
+import { TextSection } from "@/components/textSection/TextSection";
+import { krukan } from "@/utils/krukan/info";
 
 const KrukanPage = () => {
   return (
-    <div>
-      <div>
-        <h3>FC Krukan App</h3>
-      </div>
-      <div>
-        links
-        <Link href={"/https://krukan2-0.vercel.app/"} target="_blank">
-          To website
-        </Link>
-        <Link
-          href={"https://github.com/fishenchips/Krukan2.0/"}
-          target="_blank"
-        >
-          GitHub repo
-        </Link>
-      </div>
-      <div>
-        <ul>
-          <li></li>
-        </ul>
-      </div>
-      <p>welcom</p>
-    </div>
+    <TextSection
+      header={krukan.header}
+      timeSpent={krukan.timeSpent}
+      github={krukan.github}
+      website={krukan.website}
+      tags={krukan.tags}
+      text={krukan.text}
+    />
   );
 };
 
