@@ -15,10 +15,11 @@ export const TagDiv = styled.div`
 
 export const StyledTag = styled.p`
   padding: 0.5rem 1rem;
+  margin: 1rem;
   line-height: 1.1rem;
-  color: #34ebb1;
-  background-color: #dcf7e7;
-  border-radius: 25px;
+  color: white;
+  background-color: #34ebb1;
+  border-radius: 10px;
   text-align: center;
 `;
 

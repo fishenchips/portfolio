@@ -1,3 +1,11 @@
+"use client";
+import { Montserrat } from "@next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -10,7 +18,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
