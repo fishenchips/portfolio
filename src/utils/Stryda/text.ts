@@ -1,3 +1,7 @@
+export const header = "Internship - Stryda";
+
+export const timeSpent = "10 weeks fall 2022, 15 weeks spring 2023";
+
 export const strydaText = `At Stryda I have mainly worked with three projects during my internship:
 My first project involved migrating Stryda’s internally built admin system from JavaScript to Typescript, including replacing depreciated dependencies, refactoring, and building new functionality - such as API CRUD operations to get or change user data. 
 My second project was to create a back-office for Stryda’s flagship product. Before the Business Intelligence team manually worked in Swagger with JSON data as configuration. Now the BI team have automized weekly configuration work, which has reduced manual labour from hours to minutes, and potential human errors. The project also allows outside teams to work with the product. 
