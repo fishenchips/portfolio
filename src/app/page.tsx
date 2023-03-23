@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import styled from "styled-components";
 /*  <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -13,7 +15,10 @@ const Home = () => {
   return (
     <main>
       <div>
-        <h2>Welcome to my space - I&apos;m Philip Carlsson</h2>
+        <H2>
+          <span>Welcome to my space - I&apos;m </span>
+          <Name>Philip Carlsson</Name>
+        </H2>
         <ul>
           {/* color is weird atm due to a tag */}
           <li>
@@ -66,3 +71,18 @@ const Home = () => {
   );
 };
 export default Home;
+
+const H2 = styled.h2`
+  margin: 4rem 0;
+  text-align: center;
+`;
+
+const Name = styled.span`
+  background: -webkit-linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 54, 1) 35%,
+    rgba(0, 212, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
