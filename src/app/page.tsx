@@ -1,4 +1,5 @@
 "use client";
+import { pageLinks } from "@/utils/pageLinks";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -19,8 +20,8 @@ const Home = () => {
           <span>Welcome to my space - I&apos;m </span>
           <Name>Philip Carlsson</Name>
         </H2>
+        <p style={{ textAlign: "center" }}>(In progress)</p>
         <ul>
-          {/* color is weird atm due to a tag */}
           <li>
             <Link href="https://github.com/fishenchips" target="_blank">
               <FaGithub />
@@ -49,23 +50,14 @@ const Home = () => {
         </div>
       </div>
       <section>
-        <div>
-          <Link href={"/projects/krukan"}>
-            Krukan
-            <div>
-              {/*               <img src="/krukan.PNG" alt="Krukan" />
-               */}
-            </div>
-          </Link>
-        </div>
-        <div>
-          <Link href={"/projects/platzis-paradise"}>
-            Platzi&apos;s Paradise e-commerce
-          </Link>
-        </div>
-        <div>
-          <Link href={"/projects/stryda"}>Stryda internship</Link>
-        </div>
+        {pageLinks.map((project) => (
+          <LinkDiv key={project.name}>
+            <ProjectLink href={project.url}>
+              <h3>{project.name}</h3>
+              <div>{<img src={project.img} alt={project.name} />}</div>
+            </ProjectLink>
+          </LinkDiv>
+        ))}
       </section>
     </main>
   );
@@ -85,4 +77,25 @@ const Name = styled.span`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+`;
+
+const ProjectLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+`;
+
+const LinkDiv = styled.div`
+  width: 60vw;
+  margin: 3rem auto;
+  box-shadow: inset 0 -20rem linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(
+          63,
+          76,
+          119
+        )
+        70.2%);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 `;
