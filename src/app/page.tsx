@@ -1,17 +1,9 @@
 "use client";
 import { pageLinks } from "@/utils/pageLinks";
-import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
-/*  <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            /> */
+
 const Home = () => {
   return (
     <main>
@@ -54,6 +46,7 @@ const Home = () => {
           <LinkDiv key={project.name}>
             <ProjectLink href={project.url}>
               <h3>{project.name}</h3>
+              {/*                eslint-disable-next-line @next/next/no-img-element*/}
               <div>{<img src={project.img} alt={project.name} />}</div>
             </ProjectLink>
           </LinkDiv>
