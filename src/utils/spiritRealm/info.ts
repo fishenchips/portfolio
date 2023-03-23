@@ -4,7 +4,7 @@ export const spiritRealm = {
   tags: [
     "React",
     "TypeScript",
-    "Agile Methodologies",
+    "Agile methodologies",
     "Framer motion",
     "XState",
   ],
