@@ -1,6 +1,10 @@
 .heading {
-  margin: 4rem 0;
+  margin: 2rem 0;
   text-align: center;
+}
+
+.heading h2 {
+  margin-bottom: 1rem;
 }
 
 .name {

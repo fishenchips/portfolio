@@ -1,0 +1,42 @@
+.heading {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links a,
+.links a:visited {
+  text-decoration: none;
+}
+
+.home {
+  background: -webkit-linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 54, 1) 35%,
+    rgba(0, 212, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.github {
+  color: #171515;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.linkedin {
+  color: #0072b1;
+  font-size: 2rem;
+}

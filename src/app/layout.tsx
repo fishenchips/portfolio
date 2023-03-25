@@ -1,5 +1,6 @@
 "use client";
 
+import { Header } from "@/components/header/Header";
 import { Montserrat } from "@next/font/google";
 import "./globals.css";
 
@@ -20,7 +21,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

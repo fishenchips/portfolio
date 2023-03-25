@@ -1,34 +1,29 @@
 import { pageLinks } from "@/utils/pageLinks";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import styled from "./LandingPage.module.css";
 
 export const LandingPage = () => {
   return (
-    <main>
+    <div>
       <div>
-        <h2 className={styled.heading}>
-          <span>Welcome to my space - I&apos;m </span>
-          <span className={styled.name}>Philip Carlsson</span>
-        </h2>
-        <p style={{ textAlign: "center" }}>
-          (In progress, buiding with NextJs experimental /app directory)
-        </p>
-        <ul>
-          <li>
-            <Link href="https://github.com/fishenchips" target="_blank">
-              <FaGithub />
-            </Link>
-          </li>
-          <li>
+        <div className={styled.heading}>
+          <h2>
+            <span>Welcome to my space - I&apos;m </span>
+            <span className={styled.name}>Philip Carlsson</span>
+          </h2>
+          <p>
+            (In progress - buiding with NextJs experimental{" "}
             <Link
-              href="https://www.linkedin.com/in/philip-carlsson-b6494a90/"
+              href={
+                "https://beta.nextjs.org/docs/upgrade-guide#migrating-from-pages-to-app"
+              }
               target="_blank"
             >
-              <FaLinkedin />
+              app directory
             </Link>
-          </li>
-        </ul>
+            )
+          </p>
+        </div>
         <div>
           <p>
             Hello and welcome to my GitHub! I&apos;m currently a FE intern at
@@ -53,6 +48,6 @@ export const LandingPage = () => {
           </div>
         ))}
       </section>
-    </main>
+    </div>
   );
 };
