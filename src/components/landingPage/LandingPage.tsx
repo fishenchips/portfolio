@@ -11,7 +11,9 @@ export const LandingPage = () => {
           <span>Welcome to my space - I&apos;m </span>
           <span className={styled.name}>Philip Carlsson</span>
         </h2>
-        <p style={{ textAlign: "center" }}>(In progress)</p>
+        <p style={{ textAlign: "center" }}>
+          (In progress, buiding with NextJs experimental /app directory)
+        </p>
         <ul>
           <li>
             <Link href="https://github.com/fishenchips" target="_blank">

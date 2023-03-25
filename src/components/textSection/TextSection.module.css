@@ -10,31 +10,17 @@
   margin: 0 auto;
   padding: 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    padding: 3rem 0;
-  }
 }
 
 .info {
   text-align: center;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    width: 30vw;
-  }
 }
 
 .text {
   text-align: center;
   line-height: 1.5rem;
   padding: 0 20px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    width: 65vw;
-  }
+  margin-top: 1rem;
 }
 
 .tags {
@@ -63,4 +49,25 @@
   color: black;
   padding: 1rem;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+
+  .info {
+    flex-direction: row;
+    width: 30vw;
+  }
+
+  .text {
+    width: 65vw;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
 }

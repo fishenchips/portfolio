@@ -21,12 +21,11 @@ export const TextSection: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <h1 className={styled.heading}>{header}</h1>
-      <button>hej</button>
+      <h2 className={styled.heading}>{header}</h2>
       <div className={styled.section}>
         <div className={styled.info}>
           <div>
-            <p>{timeSpent}</p>
+            <i>{timeSpent}</i>
             {(github || website) && (
               <div className={styled.project}>
                 {github && (
