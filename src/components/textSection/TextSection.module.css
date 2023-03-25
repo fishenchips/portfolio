@@ -1,0 +1,66 @@
+.heading {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+}
+
+.info {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 30vw;
+  }
+}
+
+.text {
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 65vw;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags span {
+  padding: 0.25rem;
+  margin: 1rem;
+  color: white;
+  background-color: #34ebb1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.link,
+.link:visited {
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+}

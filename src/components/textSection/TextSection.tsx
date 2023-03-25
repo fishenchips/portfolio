@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import * as S from "./styled";
+import styled from "./TextSection.module.css";
 
 interface Props {
   header: string;
@@ -21,38 +21,39 @@ export const TextSection: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <S.Header>{header}</S.Header>
-      <S.PageSection>
-        <S.InfoDiv>
+      <h1 className={styled.heading}>{header}</h1>
+      <button>hej</button>
+      <div className={styled.section}>
+        <div className={styled.info}>
           <div>
             <p>{timeSpent}</p>
             {(github || website) && (
-              <S.ProjectDiv>
+              <div className={styled.project}>
                 {github && (
-                  <S.ProjectLink href={github} target="_blank">
+                  <Link className={styled.link} href={github} target="_blank">
                     <FaGithub />
-                  </S.ProjectLink>
+                  </Link>
                 )}
                 {website && (
-                  <S.ProjectLink href={website} target="_blank">
+                  <Link className={styled.link} href={website} target="_blank">
                     <FaGlobe />
-                  </S.ProjectLink>
+                  </Link>
                 )}
-              </S.ProjectDiv>
+              </div>
             )}
           </div>
-          <S.TagDiv>
+          <div className={styled.tags}>
             {tags.map((tag) => (
-              <S.StyledTag key={tag}>{tag}</S.StyledTag>
+              <span key={tag}>{tag}</span>
             ))}
-          </S.TagDiv>
-        </S.InfoDiv>
-        <S.TextDiv>
+          </div>
+        </div>
+        <div className={styled.text}>
           {text.map((section, i) => (
             <p key={i}>{section}</p>
           ))}
-        </S.TextDiv>
-      </S.PageSection>
+        </div>
+      </div>
       ;
     </>
   );
