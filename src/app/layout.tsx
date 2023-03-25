@@ -1,4 +1,7 @@
 "use client";
+
+import { CacheProvider } from "@chakra-ui/next-js";
+import { ChakraProvider } from "@chakra-ui/react";
 import { Montserrat } from "@next/font/google";
 import styled from "styled-components";
 
@@ -19,7 +22,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <Body className={montserrat.className}>{children}</Body>
+      <Body className={montserrat.className}>
+        <CacheProvider>
+          <ChakraProvider>{children}</ChakraProvider>
+        </CacheProvider>
+      </Body>
     </html>
   );
 }
