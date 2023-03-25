@@ -26,15 +26,19 @@ export const TextSection: React.FC<Props> = ({
         <S.InfoDiv>
           <div>
             <p>{timeSpent}</p>
-            {github && (
-              <S.ProjectLink href={github} target="_blank">
-                <FaGithub />
-              </S.ProjectLink>
-            )}
-            {website && (
-              <S.ProjectLink href={website} target="_blank">
-                <FaGlobe />
-              </S.ProjectLink>
+            {(github || website) && (
+              <S.ProjectDiv>
+                {github && (
+                  <S.ProjectLink href={github} target="_blank">
+                    <FaGithub />
+                  </S.ProjectLink>
+                )}
+                {website && (
+                  <S.ProjectLink href={website} target="_blank">
+                    <FaGlobe />
+                  </S.ProjectLink>
+                )}
+              </S.ProjectDiv>
             )}
           </div>
           <S.TagDiv>

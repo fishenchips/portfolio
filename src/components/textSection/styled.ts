@@ -55,6 +55,11 @@ export const StyledTag = styled.span`
   text-align: center;
 `;
 
+export const ProjectDiv = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const ProjectLink = styled(Link)`
   font-size: 1.5rem;
   color: black;

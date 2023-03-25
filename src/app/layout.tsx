@@ -3,7 +3,7 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Montserrat } from "@next/font/google";
-import styled from "styled-components";
+import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,17 +22,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <Body className={montserrat.className}>
+      <body className={montserrat.className}>
         <CacheProvider>
           <ChakraProvider>{children}</ChakraProvider>
         </CacheProvider>
-      </Body>
+      </body>
     </html>
   );
 }
-
-const Body = styled.body`
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-`;
