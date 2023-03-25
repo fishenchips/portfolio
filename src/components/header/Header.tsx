@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { GrDocumentPdf } from "react-icons/gr";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 import styled from "./Header.module.css";
 
 export const Header = () => {
@@ -15,7 +14,6 @@ export const Header = () => {
         <div>
           <ul className={styled.links}>
             <li>
-              {/*   <GrDocumentPdf /> */}
               <Link
                 className={styled.github}
                 href="https://github.com/fishenchips"
@@ -31,6 +29,16 @@ export const Header = () => {
                 target="_blank"
               >
                 <FaLinkedin />
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={styled.cv}
+                href={"/PhilipCarlsson.pdf"}
+                download
+                target="_blank"
+              >
+                <FaFilePdf />
               </Link>
             </li>
           </ul>

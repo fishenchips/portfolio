@@ -38,5 +38,11 @@
 
 .linkedin {
   color: #0072b1;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.cv {
+  color: #f40f02;
   font-size: 2rem;
 }
