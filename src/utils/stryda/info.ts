@@ -4,11 +4,12 @@ export const stryda = {
   tags: [
     "React",
     "TypeScript",
-    "Agile Methodologies",
+    "Agile methodologies",
     "Tanstack Query",
     "React Hook Form",
     "Yup",
     "TailwindCSS",
+    "React Testing Library",
     "Vitest",
   ],
   text: [

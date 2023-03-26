@@ -11,5 +11,6 @@ export const spiritRealm = {
   text: [
     `Working with a senior frontend developer to create a web-based card game. 
     It will be a "Player versus Environment" game, using state machine for a turned based system.`,
+    `More to follow`,
   ],
 };

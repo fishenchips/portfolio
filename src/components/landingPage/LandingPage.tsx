@@ -24,18 +24,6 @@ export const LandingPage = () => {
             )
           </p>
         </div>
-        <div>
-          <p>
-            Hello and welcome to my GitHub! I&apos;m currently a FE intern at
-            Stryda, and graduating from Medieinstitutet in may 2023. Over my
-            intern I have improved greatly in React, Typescript, and in packages
-            such as tanstack query, react hook form. Furthermore I have lead
-            daily stand-ups and retros which I enjoy. I&apos;m actively seeking
-            a full-time position as a FE developer, where I can continue to
-            learn and work with my passion. Currently working on: Creating my
-            portfolio and Krukan 2.0.
-          </p>
-        </div>
       </div>
       <section>
         {pageLinks.map((project) => (

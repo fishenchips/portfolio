@@ -16,6 +16,6 @@ export const krukan = {
     `My school examination project. I build a web shop where products are taken from an API. Users can also create an account, 
   and complete purchases. If logged in while buying, all orders will be shown on the user page.
   `,
-    `The shopping cart is built with global state context and useReducer, as well as local storage. `,
+    `The shopping cart is built with global state context and useReducer, as well as local storage.`,
   ],
 };

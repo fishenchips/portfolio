@@ -20,7 +20,7 @@ export const krukan = {
     Players are able to attend matches if they can play, so the coach know who's available. 
     Future additions will be statistics from matches and training.`,
     `Data is stored in a MongoDB cluster, and the project is written in NextJs.`,
-    `Note: You are welcome to try the app and create an account. I would appreciate it if you aren't signed up for any matches
-    when you leave the site. :-)`,
+    `Note: You are welcome to try the app and create an account. I would appreciate it if you unattend any matches 
+    you signed up for, before leaving the site. :-)`,
   ],
 };
