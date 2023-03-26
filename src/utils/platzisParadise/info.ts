@@ -1,4 +1,4 @@
-export const krukan = {
+export const webshop = {
   header: "Examination project- Platzi's Paradise",
   timeSpent: "19 December 2022 - 25 January 2023",
   github: "https://github.com/fishenchips/web-shop-examination",
