@@ -6,6 +6,7 @@ import { krukan } from "@/utils/krukan/info";
 const images = [
   "/krukan/landing-page.jpg",
   "/krukan/match-roster.jpg",
+  "/krukan/mobile.jpg",
   "/krukan/match-schedule.jpg",
   "/krukan/db-matches.jpg",
 ];
@@ -21,8 +22,8 @@ const KrukanPage = () => {
         tags={krukan.tags}
         text={krukan.text}
       />
-      {images.map((img, i) => (
-        <ProjectImage key={i} src={img} alt={"krukan"} />
+      {images.map((img) => (
+        <ProjectImage key={img} src={img} alt={"Krukan 2.0"} />
       ))}
     </>
   );

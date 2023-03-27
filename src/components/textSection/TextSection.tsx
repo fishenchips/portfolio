@@ -53,7 +53,6 @@ export const TextSection: React.FC<Props> = ({
           ))}
         </div>
       </div>
-      ;
     </>
   );
 };
