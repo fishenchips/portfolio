@@ -1,4 +1,5 @@
 import { pageLinks } from "@/utils/pageLinks";
+import Image from "next/image";
 import Link from "next/link";
 import styled from "./LandingPage.module.css";
 
@@ -30,8 +31,16 @@ export const LandingPage = () => {
           <div className={styled.linkDiv} key={project.name}>
             <Link className={styled.projectLink} href={project.url}>
               <h3>{project.name}</h3>
-              {/*eslint-disable-next-line @next/next/no-img-element*/}
-              <div>{<img src={project.img} alt={project.name} />}</div>
+              <div>
+                <Image
+                  src={project.img}
+                  alt={project.name}
+                  fill
+                  placeholder="blur"
+                  blurDataURL={project.img}
+                  loading="lazy"
+                />
+              </div>
             </Link>
           </div>
         ))}
@@ -39,3 +48,13 @@ export const LandingPage = () => {
     </div>
   );
 };
+/* <div className={styled.imgDiv}>
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        placeholder="blur"
+        blurDataURL={src}
+        loading="lazy"
+      />
+    </div> */
